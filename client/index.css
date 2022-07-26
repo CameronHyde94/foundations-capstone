@@ -1,0 +1,763 @@
+
+/* || GENERAL STYLES  */
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    background-color: #262626;
+}
+
+
+
+.hero::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./images/bagels-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: crimson;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+/* || END GENERAL STYLES */
+
+/* || Header and Main Navigation */
+
+.logo {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    width: 100px;
+    height: 80px;
+    /* margin-right: 20px;
+    margin-top: 15px; */
+}
+
+.home-logo {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 45%; 
+}
+
+.nav-logo {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 20%;
+}
+
+/* End Header and Main Navigation */
+
+/* Section */
+
+.hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./images/bagels-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    background-position: center center;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: relative;
+    font-family: "Lora", sans-serif;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+    margin: 0.625rem;
+    background-size: cover;
+
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 1rem;
+}
+
+.hero-button {
+    background-color: crimson;
+    color: #fff;
+    border: 1px solid #fff;
+    margin-top: 1.25rem;
+    padding: 2rem 3.5rem;
+    font-family: "Lora", sans-serif;
+    font-size: 1.725rem;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background-color: black;
+    color: #fff;
+    border: 2px solid crimson;
+}
+
+.about-title {
+    font-size: 5rem;
+    font-weight: 600;
+    margin-top: 1;
+    margin-bottom: 0;
+}
+
+.about-subtitle {
+    font-size: 3rem;
+    margin-top: 2.5rem;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5em;
+    flex-wrap: wrap;
+}
+
+.menu-nav li {
+    text-transform: uppercase;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: 3em;
+    font-size: 18px;
+    font-family: 'Lora', sans-serif;
+    font-weight: 700;
+}
+
+.menu-nav__link.color-primary {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #c54d63;
+}
+
+.menu {
+    max-width: 80%;
+    width: 80%;
+    margin: auto;
+}
+
+.menu-tab {
+    display: none;
+    margin: 4em 0;
+}
+
+.menu-tab:first-of-type {
+    display: block;
+}
+
+.menu-tab > div {
+    display: flex;
+}
+
+.content {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.bagel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* width: 100%; */
+    /* height: 100%; */
+    display: block;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-container {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/bagels-4.jpg);
+    /* background-attachment: fixed; */
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.contact-container {
+    content: "";
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/bagels-3.jpg);
+    /* background-attachment: fixed; */
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-list {
+    justify-content: center;
+}
+.menu-list-item {
+    margin-bottom: 1.5em;
+}
+
+.menu-list-item__title {
+color: #fff;
+font-weight: 500;
+font-size: 25px;
+font-family: ‘Lora’, serif;
+}
+
+.menu-list-item sup {
+color: #575757;
+margin-left: 2px;
+font-family: “Lato”;
+font-size: 12px;
+font-weight: 400;
+}
+
+.menu-list-item__desc {
+color: #FDFFFC;
+/* max-width: 50%; */
+font-size: 20px;
+font-style: italic;
+justify-content: center;
+}
+
+.menu-list-item__desc,
+.menu-list-item__price {
+flex: 2 0 auto; 
+font-size: 15px;
+font-family: "Lato", sans-serif;
+justify-content: center;
+align-content: center;
+}
+
+
+.menu-list-item__dots::before {
+    display: block;
+    overflow: hidden;
+    content: “…………………………………………………………………………………… ”;
+    height: 2em;
+    padding: 0 6px;
+    word-break: break-word;
+    float: right;
+}
+
+.menu-container {
+    content: "";
+    position: relative  ;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/bagels-2.jpg);
+    background-attachment: fixed;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Contact Form */
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li + li {
+    margin-top: 1em;
+}
+
+label {
+    display: inline-block;
+    width: 90px;
+    color: #FDFFFC;
+    text-align: center;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+}
+
+
+button {
+    /* margin-left: .5em; */
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-header {
+    color: black;
+}
+/* || Footer Section */
+footer {
+	background: #333333;
+    position:relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: arial;
+}
+.footerLinks {
+   text-align: center;
+}
+.footerLinks ul {
+	padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.footerLinks li {
+	display: inline;
+}
+.footerLinks a {
+	color: #d9d9d9;
+	text-decoration: none;
+	font-size: 25px;
+}
+.title {
+    color: #d9d9d9;
+    font-size: 3em;
+}
+.hours {
+    text-align: center;
+    color: #d9d9d9;
+    font-size: 2em;
+}
+
+.address {
+    text-align: center;
+}
+
+.address p {
+    margin: 0;
+    color: #b3b3b3;
+    font-size: 1.5em;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p {
+	margin: 0;
+	color: #b3b3b3;
+	font-size: 20px;
+}
+/* End Footer Section */
+
+/* Media Queries */ 
+
+@media only screen (max-width: 487px) {
+    .hero-content {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        text-align: center;
+        height: 100%;
+        margin: 0.625rem;
+        background-size: cover;
+    }
+
+    .hero-title {
+        font-size: 2.75rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    .hero-subtitle {
+        font-size: 1.75rem;
+        font-weight: 200;
+        margin-top: 1rem;
+    }
+
+    .hero-button {
+        background-color: crimson;
+        color: #fff;
+        border: 1px solid #fff;
+        margin-top: 2rem;
+        padding: 0.9375rem 1.875rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.750rem;
+        font-weight: 200;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4rem;
+        bottom: 0%;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .home-logo {
+        display: inline-block;
+        vertical-align: right;
+        max-width: 50%; 
+    }
+
+    .nav-logo {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 30%;
+    }
+
+    label {
+        color: black;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hero-content {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        text-align: center;
+        height: 100%;
+        margin: 0.625rem;
+        background-size: cover;
+    }
+
+    .hero-title {
+        font-size: 2.75rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    .hero-subtitle {
+        font-size: 1.75rem;
+        font-weight: 200;
+        margin-top: 1rem;
+    }
+
+    .hero-button {
+        background-color: crimson;
+        color: #fff;
+        border: 1px solid #fff;
+        margin-top: 2rem;
+        padding: 0.9375rem 1.875rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.750rem;
+        font-weight: 200;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4rem;
+        bottom: 0%;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .home-logo {
+        display: inline-block;
+        vertical-align: right;
+        max-width: 50%; 
+    }
+
+    .nav-logo {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 30%;
+    }
+
+    label {
+        color: black;
+    }
+}
+
+@media(max-width: 850px){
+    .menu-tab > div {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .hero-content {
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        text-align: center;
+        height: 100%;
+        margin: 0.625rem;
+        background-size: cover;
+    }
+
+    .hero-title {
+        font-size: 2.75rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+
+    .hero-subtitle {
+        font-size: 1.75rem;
+        font-weight: 200;
+        margin-top: 1rem;
+    }
+
+    .hero-button {
+        background-color: crimson;
+        color: #fff;
+        border: 1px solid #fff;
+        margin-top: 2rem;
+        padding: 0.9375rem 1.875rem;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.750rem;
+        font-weight: 200;
+        cursor: pointer;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4rem;
+        bottom: 0%;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .home-logo {
+        display: inline-block;
+        vertical-align: right;
+        max-width: 50%; 
+    }
+
+    .nav-logo {
+        display: inline-block;
+        vertical-align: top;
+        max-width: 30%;
+    }
+
+    label {
+        color: black;
+    }
+}
+
+
+/* End Media Queries */
+
+/* Menu Section */
+
+
+
+/* End Menu Section */
